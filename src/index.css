@@ -1,0 +1,17 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+body{
+
+    font-family:monospace;
+   background-color: white;
+}
+img{
+ object-fit: contain;
+ width: 100%;
+
+}

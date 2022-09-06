@@ -1,0 +1,99 @@
+.sideDraw{
+
+width: 55%;
+height: 100vh;
+background-color: whitesmoke;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 200;
+transform: translateX(-100%);
+transition: all 0.3s ease-out;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.sideDraw.show{
+
+
+
+
+    transform: translateX(0);
+}
+
+.sideDraw_link{
+
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    /* background-color: darkgray; */
+     /* padding: 10px;
+     border-radius: 8px; */
+
+}
+.sideDraw_link>li{
+display: flex;
+align-items: center;
+
+
+}
+.sideDraw_link>li>a{
+display: flex;
+align-items: center;
+justify-content: center;
+flex: 1;
+padding: 1rem;
+text-decoration:underline;
+color: black;
+font-size: 1.6rem;
+
+
+}
+.sideDraw_link>li>a:hover{
+
+
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+}
+.sideDraw_link>li>a>span{
+display: flex;
+align-items: center;
+margin-left: 5px;
+
+
+
+}
+
+.sideDrawer__badge{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #171717;
+    color: white;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+.sideDraw_link>li>a:hover .sideDrawer__badge{
+
+    background: white;
+    color: #171717;
+    
+
+}
+
+@media (min-width:900px) {
+
+    .sideDraw{
+
+        display: none;
+    }
+    
+}

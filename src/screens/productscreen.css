@@ -1,0 +1,137 @@
+.productscreen{
+
+text-align: center;
+    max-width: 1300px;
+    margin: 1rem auto;
+    display: flex;
+}
+
+.ProductLeft{
+
+
+    display: flex;
+    flex: 0.8;
+}
+
+.LeftImage{
+
+margin: 1rem;
+flex: 0.6;
+}
+.Size{
+
+color: white;
+/* margin-right: 6rem; */
+text-align: center;
+
+}
+.form-select{
+
+    width: 7rem;
+    margin-left: 7rem;
+  text-align: center;
+}
+
+.linfor{
+
+
+    margin: 1rem;
+    flex: 0.4;
+    background: black;
+    color: white;
+    height: fit-content;
+    font-size: large;
+   
+
+}
+.leftname{
+
+font-weight: bold;
+font-size: larger;
+
+}
+.linfor>p{
+
+padding: 1.5rem;
+border-bottom: 0.5px solid rgba(253, 253, 253, 0.918);
+
+
+}
+
+.linfor>p>:last-child {
+
+border: none;
+
+
+}
+
+.linfor>p>button{
+
+
+grid-column: 1/-1;
+padding: 10px 120px;
+background-color: white;
+color: black;
+border: 1px solid #171717;
+cursor: pointer;
+
+
+
+
+}
+.linfor select{
+
+
+    padding:  10px 50px 10px 10px;
+    display: grid;
+     grid-column: repeat(2, 1fr);
+}
+
+/* @media(max-width:800px){
+
+    .linfor{
+        max-width: 1000px;
+        margin: 1rem auto;
+        display: inline-block;
+
+    }
+
+
+} */
+
+/* @media(max-width:800px){
+
+    .productscreen{
+        max-width: 1000px;
+        margin: 2rem auto;
+        display: inline-block;
+
+    }
+
+
+} */
+
+@media(max-width:800px){
+
+    .productscreen{
+     flex-direction: column;
+
+    }
+
+    .ProductLeft{
+        flex-direction: column;
+        flex: 1;
+   
+       }
+   
+       .LeftImag{
+           flex: 1;
+       }
+
+       .linfor {
+           flex: 1;
+           padding: 1rem;
+       }
+
+}
+
